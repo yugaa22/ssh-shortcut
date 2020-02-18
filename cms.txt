@@ -1,0 +1,20 @@
+--->.In Localsystem:
+cd .ssh/
+ ls -la
+ ssh-keygen
+ ls -la
+ ssh-copy-id -i id_rsa.pub username@xx.xx.xx.xx
+ ssh username@xx.xx.xx.xx
+--->>Inlocalsystem
+cd .ssh
+ls
+touch config
+vim config
+--------------------------
+Host yug
+   HostName xx.xx.xx.xx
+   User username
+#   IdentityFile /path
+--------------------- 
+  ssh yug 
+  
